@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ProdukModel extends Model
+{
+    protected $table = 'produk';
+
+    public $timestamps = false;
+
+    protected $fillable = [
+        'NamaProduk',
+        'HargaProduk',
+        'StokProduk'
+    ];
+}
